@@ -24,12 +24,10 @@ Electronics and Computers Department
   - [📝 Assignment Overview](#-assignment-overview-1)
   - [📚 Theoretical Overview](#-theoretical-overview)
   - [💻 Implemented Functions](#-implemented-functions)
-  - [📁 Repository Structure](#-repository-structure)
 - [🎥 Assignment 3: Viewing](#-assignment-3-viewing)
   - [📝 Assignment Overview](#-assignment-overview-2)
   - [📚 Theoretical Overview](#-theoretical-overview-1)
   - [💻 Implemented Functions](#-implemented-functions-1)
-  - [📁 Repository Structure](#-repository-structure-1)
 
 ---
 
@@ -113,9 +111,6 @@ Finally, `render_object()` acts as the orchestrator that:
 - `rasterize(pts_2d, plane_w, plane_h, res_w, res_h)` — Maps projected points to image pixels
 - `render_object(...)` — Complete rendering pipeline from 3D object to 2D image
 
----
-
-## 📁 Repository Structure
 
 ---
 # 🎥 Assignment 3: Viewing
@@ -169,4 +164,31 @@ The `render_object()` function ties everything together:
 
 ---
 
-## 📁 Repository Structure
+```
+##📁 Repository Structure
+
+├── README.md                        # Project overview and documentation for all assignments
+
+├── Assignment_1/                   # Assignment 1: Triangle Filling
+│   ├── Coursework 1/              # Contains input data files (e.g., .npy) for shading tasks
+│   ├── Demos/                     # Scripts demonstrating Flat and Gouraud shading
+│   ├── Python Code/              # Core implementation: interpolation and triangle filling logic
+│   ├── Sample Images/            # Output images generated from demo scripts
+│   └── Report.pdf                # Detailed report and analysis for Assignment 1
+
+├── Assignment_2/                   # Assignment 2: Transformations & Projections
+│   ├── Coursework 2/              # Input datasets or transformation data for testing
+│   ├── Demos/                     # Demo scripts for 3D transformations and projections
+│   ├── Python Code/              # Core implementation: Transform class, lookat, rasterize, etc.
+│   ├── Sample Images/            # Screenshots or output renderings of projected objects
+│   └── Report.pdf                # Detailed report and analysis for Assignment 2
+
+├── Assignment_3/                   # Assignment 3: Viewing & Shading
+│   ├── Coursework 1/              # Input data for rendering pipeline with lighting
+│   ├── Demos/                     # Scripts showcasing Gouraud and Phong shading in 3D scenes
+│   ├── Python Code/              # Full rendering pipeline with lighting and shading
+│   ├── Sample Images/            # Rendered outputs showing final shaded scenes
+│   └── Report.pdf                # Detailed report and analysis for Assignment 3
+```
+
+---
