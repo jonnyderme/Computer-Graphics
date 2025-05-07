@@ -8,9 +8,9 @@ Faculty of Engineering, AUTh
 School of Electrical and Computer Engineering  
 Electronics and Computers Department
 
-📚 *Course:* Computer Graphics 
+📚 *Course:* Digital Systems Hardware I  
 🏛️ *Faculty:* AUTh - School of Electrical and Computer Engineering  
-📅 *Semester:* 8th Semester, 2023–2024
+📅 *Semester:* 7th Semester, 2023–2024
 
 
 ---
