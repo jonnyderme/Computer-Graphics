@@ -15,6 +15,26 @@ Electronics and Computers Department
 
 ---
 
+## 🧭 Table of Contents
+
+- [📌 Assignment 1: Triangle Filling](#-assignment-1-triangle-filling)
+  - [📝 Assignment Overview](#-assignment-overview)
+  - [📚 Contents](#-contents)
+- [📌 Assignment 2: Transformations and Projections](#-assignment-2-transformations-and-projections)
+  - [📝 Assignment Overview](#-assignment-overview-1)
+  - [📚 Theoretical Overview](#-theoretical-overview)
+  - [💻 Implemented Functions](#-implemented-functions)
+  - [📁 Repository Structure](#-repository-structure)
+- [🎥 Assignment 3: Viewing](#-assignment-3-viewing)
+  - [📝 Assignment Overview](#-assignment-overview-2)
+  - [📚 Theoretical Overview](#-theoretical-overview-1)
+  - [💻 Implemented Functions](#-implemented-functions-1)
+  - [📁 Repository Structure](#-repository-structure-1)
+
+---
+
+
+
 # 📌 Assignment 1: Triangle Filling
 ## 📝 Assignment Overview
 
@@ -120,7 +140,7 @@ The function supports **multiple point light sources**, each contributing additi
 ### ✅ 2. Surface Normals
 Using the `calculate_normals()` function, we compute **per-vertex normals** from triangle faces. These normals are critical for shading:
 - Normals are computed using the **right-hand rule**.
-- Each vertex normal is an average of the normals of adjacent faces.
+- Each vertex normal is an average of the normals of adjacent faces, supporting smooth shading transitions.
 
 ### ✅ 3. Complete Rendering Pipeline
 The `render_object()` function ties everything together:
@@ -131,16 +151,21 @@ The `render_object()` function ties everything together:
 5. Generates the final 2D image as `img`.
 
 ### ✅ 4. Shading Models
-- **Gouraud shading**: Computes lighting at vertices and interpolates colors across the triangle.
-- **Phong shading**: Interpolates normals across the triangle and computes lighting per pixel for smoother, more realistic highlights.
+- **Gouraud shading**: Computes lighting at vertices and interpolates colors across the triangle (faster, less realistic).
+- **Phong shading**: Interpolates normals and computes lighting per pixel (slower, smoother highlights and reflections).
 
 ---
 
 ## 💻 Implemented Functions
 
-- `light(point, normal, vcolor, cam_pos, ka, kd, ks, n, lpos, lint)` — Computes light intensity at a point using Phong lighting.
-- `calculate_normals(verts, faces)` — Calculates vertex normals from triangle geometry.
-- `render_object(...)` — Renders a 3D object with selected shading technique and full lighting model.
+- `light(point, normal, vcolor, cam_pos, ka, kd, ks, n, lpos, lint)`  
+  → Computes light intensity at a point using Phong illumination model.
+
+- `calculate_normals(verts, faces)`  
+  → Calculates vertex normals based on triangle face geometry.
+
+- `render_object(shader, focal, eye, lookat, up, bg_color, M, N, H, W, verts, vert_colors, faces, ka, kd, ks, n, lpos, lint, lamb)`  
+  → Full rendering pipeline using selected shading method (`gouraud` or `phong`).
 
 ---
 
