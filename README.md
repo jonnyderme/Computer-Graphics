@@ -33,7 +33,8 @@ Electronics and Computers Department
 
 
 
-# 📌 Assignment 1: Triangle Filling
+# 📌 Assignment 1: Triangle Filling - Scanline algorithm for triangle rasterization and shading
+to images
 ## 📝 Assignment Overview
 
 This assignment focuses on implementing triangle rasterization and color shading techniques using linear interpolation. The objective is to simulate the coloring of 3D objects projected in 2D, using both **Flat** and **Gouraud shading** techniques.
@@ -65,7 +66,7 @@ Draws multiple triangles that form a 3D object projection, handling:
 ---
 
 
-# 📌 Assignment 2: Transformations and Projections
+# 📌 Assignment 2: Transformations and Projections - 3D Scene Projection
 ## 📝 Assignment Overview
 
 This repository contains the implementation for the second assignment of the Computer Graphics course at AUTH. The goal of this assignment is to build a minimal 3D rendering pipeline that transforms, projects, and renders 3D objects onto a 2D screen using fundamental linear algebra operations and camera modeling techniques.
@@ -113,7 +114,7 @@ Finally, `render_object()` acts as the orchestrator that:
 
 
 ---
-# 🎥 Assignment 3: Viewing
+# 🎥 Assignment 3: Viewing - Lighting and Texture Mapping in 3D
 ## 📝 Assignment Overview
 
 This repository contains the implementation for the third assignment of the Computer Graphics course at AUTH. The goal of this task is to extend the rendering pipeline with **illumination modeling**, **shading**, and a complete virtual camera setup. We implement both **Gouraud** and **Phong** shading to simulate realistic lighting effects on 3D surfaces.
