@@ -33,9 +33,8 @@ Electronics and Computers Department
 
 
 
-# 📌 Assignment 1: Triangle Filling - Scanline algorithm for triangle rasterization and shading
-to images
-## 📝 Assignment Overview
+## 📌 Assignment 1: Triangle Filling - Scanline algorithm for triangle rasterization and shading to images
+### 📝 Assignment Overview
 
 This assignment focuses on implementing triangle rasterization and color shading techniques using linear interpolation. The objective is to simulate the coloring of 3D objects projected in 2D, using both **Flat** and **Gouraud shading** techniques.
 
@@ -66,8 +65,8 @@ Draws multiple triangles that form a 3D object projection, handling:
 ---
 
 
-# 📌 Assignment 2: Transformations and Projections - 3D Scene Projection
-## 📝 Assignment Overview
+## 📌 Assignment 2: Transformations and Projections - 3D Scene Projection
+### 📝 Assignment Overview
 
 This repository contains the implementation for the second assignment of the Computer Graphics course at AUTH. The goal of this assignment is to build a minimal 3D rendering pipeline that transforms, projects, and renders 3D objects onto a 2D screen using fundamental linear algebra operations and camera modeling techniques.
 
@@ -100,7 +99,7 @@ Finally, `render_object()` acts as the orchestrator that:
 
 ---
 
-## 💻 Implemented Functions
+### 💻 Implemented Functions
 
 - `Transform` class
   - `.rotate(theta, u)` — Rotate around axis `u` by angle `theta`
@@ -114,14 +113,14 @@ Finally, `render_object()` acts as the orchestrator that:
 
 
 ---
-# 🎥 Assignment 3: Viewing - Lighting and Texture Mapping in 3D
-## 📝 Assignment Overview
+## 🎥 Assignment 3: Viewing - Lighting and Texture Mapping in 3D
+### 📝 Assignment Overview
 
 This repository contains the implementation for the third assignment of the Computer Graphics course at AUTH. The goal of this task is to extend the rendering pipeline with **illumination modeling**, **shading**, and a complete virtual camera setup. We implement both **Gouraud** and **Phong** shading to simulate realistic lighting effects on 3D surfaces.
 
 ---
 
-## 📚 Theoretical Overview
+### 📚 Theoretical Overview
 
 This assignment builds on the affine transformations and projections from Assignments 1 and 2, introducing **lighting**, **shading**, and a complete rendering pipeline.
 
@@ -152,7 +151,7 @@ The `render_object()` function ties everything together:
 
 ---
 
-## 💻 Implemented Functions
+### 💻 Implemented Functions
 
 - `light(point, normal, vcolor, cam_pos, ka, kd, ks, n, lpos, lint)`  
   → Computes light intensity at a point using Phong illumination model.
